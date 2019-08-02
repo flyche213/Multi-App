@@ -4,9 +4,7 @@ Library  SeleniumLibrary
 Resource  ../../Resource/Front/Front.robot
 
 
-*** Variables ***
-${Browser}  chrome
-${URL}  http://www.robotframeworktutorial.com/front-office
+
 
 
 
