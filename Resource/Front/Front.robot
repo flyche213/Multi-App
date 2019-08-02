@@ -3,11 +3,11 @@ Documentation  Common resource Library
 
 *** Variables ***
 ${Browser}  chrome
-${URL}  http://www.ebay.com/
+${Front_URL}  http://www.ebay.com/
 
 *** Keywords ***
 Front Open Team Page
-    Open Browser  ${URL}  ${Browser}
+    Open Browser  ${Front_URL}  ${Browser}
     Maximize Browser Window
     #Click Link  xpath://a[@class='page-scroll']
     sleep  3s

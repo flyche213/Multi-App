@@ -1,77 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20190802 16:01:31.064" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20190802 16:29:29.712" rpa="false">
 <suite id="s1" name="EndToEnd" source="C:\Users\C60134A\PycharmProjects\end2end\Tests\EndToEnd\EndToEnd.robot">
 <test id="s1-t1" name="Start">
 <kw name="Front Open Team Page" library="Front">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
-<arg>${URL}</arg>
+<arg>${Front_URL}</arg>
 <arg>${Browser}</arg>
 </arguments>
-<msg timestamp="20190802 16:01:31.358" level="INFO">Opening browser 'chrome' to base url 'http://www.facebook.com'.</msg>
-<status status="PASS" starttime="20190802 16:01:31.358" endtime="20190802 16:01:34.746"></status>
+<msg timestamp="20190802 16:29:29.994" level="INFO">Opening browser 'chrome' to base url 'http://www.ebay.com/'.</msg>
+<status status="PASS" starttime="20190802 16:29:29.994" endtime="20190802 16:29:33.063"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190802 16:01:34.747" endtime="20190802 16:01:34.870"></status>
+<status status="PASS" starttime="20190802 16:29:33.063" endtime="20190802 16:29:33.228"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20190802 16:01:37.871" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20190802 16:01:34.870" endtime="20190802 16:01:37.871"></status>
+<msg timestamp="20190802 16:29:36.229" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190802 16:29:33.228" endtime="20190802 16:29:36.229"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20190802 16:01:37.871" endtime="20190802 16:01:40.195"></status>
+<status status="PASS" starttime="20190802 16:29:36.229" endtime="20190802 16:29:38.672"></status>
 </kw>
-<status status="PASS" starttime="20190802 16:01:31.358" endtime="20190802 16:01:40.196"></status>
+<status status="PASS" starttime="20190802 16:29:29.993" endtime="20190802 16:29:38.673"></status>
 </kw>
 <kw name="Back Open Team Page" library="Back">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
-<arg>${URL}</arg>
+<arg>${Back_URL}</arg>
 <arg>${Browser}</arg>
 </arguments>
-<msg timestamp="20190802 16:01:40.198" level="INFO">Opening browser 'chrome' to base url 'http://www.facebook.com'.</msg>
-<status status="PASS" starttime="20190802 16:01:40.197" endtime="20190802 16:01:43.244"></status>
+<msg timestamp="20190802 16:29:38.675" level="INFO">Opening browser 'chrome' to base url 'http://www.facebook.com'.</msg>
+<status status="PASS" starttime="20190802 16:29:38.675" endtime="20190802 16:29:41.601"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190802 16:01:43.244" endtime="20190802 16:01:43.365"></status>
+<status status="PASS" starttime="20190802 16:29:41.601" endtime="20190802 16:29:41.715"></status>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
-<arg>3s</arg>
+<arg>//input[@name="email"]</arg>
+<arg>testing</arg>
 </arguments>
-<msg timestamp="20190802 16:01:46.366" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20190802 16:01:43.365" endtime="20190802 16:01:46.366"></status>
+<msg timestamp="20190802 16:29:41.715" level="INFO">Typing text 'testing' into text field '//input[@name="email"]'.</msg>
+<status status="PASS" starttime="20190802 16:29:41.715" endtime="20190802 16:29:41.795"></status>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20190802 16:01:46.366" endtime="20190802 16:01:48.716"></status>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="pass"]</arg>
+<arg>***</arg>
+</arguments>
+<msg timestamp="20190802 16:29:41.796" level="INFO">Typing text '***' into text field '//input[@name="pass"]'.</msg>
+<status status="PASS" starttime="20190802 16:29:41.796" endtime="20190802 16:29:41.861"></status>
 </kw>
-<status status="PASS" starttime="20190802 16:01:40.196" endtime="20190802 16:01:48.717"></status>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id="u_0_a"]</arg>
+</arguments>
+<msg timestamp="20190802 16:29:41.861" level="INFO">Clicking element '//input[@id="u_0_a"]'.</msg>
+<status status="PASS" starttime="20190802 16:29:41.861" endtime="20190802 16:29:41.933"></status>
 </kw>
-<status status="PASS" starttime="20190802 16:01:31.357" endtime="20190802 16:01:48.718" critical="yes"></status>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>//a[@href="https://www.facebook.com/recover/initiate/?ars=facebook_login"]</arg>
+</arguments>
+<msg timestamp="20190802 16:29:41.934" level="INFO">Clicking link '//a[@href="https://www.facebook.com/recover/initiate/?ars=facebook_login"]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190802 16:29:42.315" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190802 16:29:41.947" endtime="20190802 16:29:42.315"></status>
+</kw>
+<msg timestamp="20190802 16:29:42.326" level="FAIL">Link with locator '//a[@href="https://www.facebook.com/recover/initiate/?ars=facebook_login"]' not found.</msg>
+<status status="FAIL" starttime="20190802 16:29:41.933" endtime="20190802 16:29:42.326"></status>
+</kw>
+<status status="FAIL" starttime="20190802 16:29:38.674" endtime="20190802 16:29:42.326"></status>
+</kw>
+<status status="FAIL" starttime="20190802 16:29:29.993" endtime="20190802 16:29:42.327" critical="yes">Link with locator '//a[@href="https://www.facebook.com/recover/initiate/?ars=facebook_login"]' not found.</status>
 </test>
 <doc>End to End testing</doc>
-<status status="PASS" starttime="20190802 16:01:31.068" endtime="20190802 16:01:48.720"></status>
+<status status="FAIL" starttime="20190802 16:29:29.716" endtime="20190802 16:29:42.328"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="EndToEnd">EndToEnd</stat>
+<stat pass="0" fail="1" id="s1" name="EndToEnd">EndToEnd</stat>
 </suite>
 </statistics>
 <errors>
