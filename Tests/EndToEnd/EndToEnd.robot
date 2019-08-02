@@ -5,10 +5,6 @@ Resource  ../../Resource/Back/Back.robot
 Resource  ../../Resource/Front/Front.robot
 
 
-
-
-
-
 *** Test Cases ***
 Start
    Front Open Team Page
