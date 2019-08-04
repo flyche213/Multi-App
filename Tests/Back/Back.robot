@@ -7,3 +7,4 @@ Resource  ../../Resource/Back/Back.robot
 *** Test Cases ***
 Start
    Back Open Team Page
+   FB Test Input

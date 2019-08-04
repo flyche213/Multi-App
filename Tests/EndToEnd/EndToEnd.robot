@@ -6,6 +6,11 @@ Resource  ../../Resource/Front/Front.robot
 
 
 *** Test Cases ***
-Start
+App1
    Front Open Team Page
+   Samsung Test Input
+   Search Tabs
+
+App2
    Back Open Team Page
+   FB Test Input

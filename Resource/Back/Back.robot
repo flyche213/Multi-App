@@ -11,6 +11,8 @@ ${Back_URL}  http://www.facebook.com
 Back Open Team Page
     Open Browser  ${Back_URL}  ${Browser}
     Maximize Browser Window
+
+FB Test Input
     #Click Link  xpath://a[@class='page-scroll']
     Input Text  //input[@name="email"]  testing
     Input Text  //input[@name="pass"]  ***
