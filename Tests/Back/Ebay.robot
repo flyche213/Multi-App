@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation  End to End testing
 Library  SeleniumLibrary
-Resource  ../../Resource/Back/Back.robot
+Resource  ../../Resource/Back/Ebay.robot
 
 
 *** Test Cases ***

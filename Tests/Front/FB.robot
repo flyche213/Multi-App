@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation  End to End testing
 Library  SeleniumLibrary
-Resource  ../../Resource/Front/Front.robot
+Resource  ../../Resource/Front/FB.robot
 
 
 *** Test Cases ***
