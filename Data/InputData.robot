@@ -3,6 +3,8 @@ Documentation  Data for end to end
 
 
 *** Variables ***
+${Value}  300
+
 #Front Page Links and Variables
 ${MainLink}  //div[@id="mainContent"]
 ${EbayInput}  //input[@name="_nkw"]

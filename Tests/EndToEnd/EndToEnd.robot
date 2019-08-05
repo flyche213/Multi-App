@@ -5,11 +5,22 @@ Resource  ../../Resource/Back/FB.robot
 Resource  ../../Resource/Front/Ebay.robot
 
 
+*** Variables ***
+${Value}  300
+
 *** Test Cases ***
-#App1
-#   Ebay.Open Team Page
-#   Ebay.Samsung Test Input
-#   Ebay.Search Tabs
+
+Run App
+    Run Keyword If  ${Value} > 200  App1
+    ...  ELSE  App2
+
+
+
+*** Keywords ***
+App1
+   Ebay.Open Team Page
+   Ebay.Samsung Test Input
+   Ebay.Search Tabs
 
 App2
    FB.Open Team Page
