@@ -7,10 +7,11 @@ Resource  ../../Resource/Front/Front.robot
 
 *** Test Cases ***
 App1
-   Front Open Team Page
-   Samsung Test Input
-   Search Tabs
+   Front.Open Team Page
+   Front.Samsung Test Input
+   Front.Search Tabs
 
 App2
-   Back Open Team Page
-   FB Test Input
+   Back.Open Team Page
+   Back.FB Enter Credentials  ${LoginUser1}
+   Back.Recovery

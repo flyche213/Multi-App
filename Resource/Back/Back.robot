@@ -8,18 +8,22 @@ ${Back_URL}  http://www.facebook.com
 
 
 *** Keywords ***
-Back Open Team Page
+Open Team Page
     Open Browser  ${Back_URL}  ${Browser}
     Maximize Browser Window
 
-FB Test Input
     #Click Link  xpath://a[@class='page-scroll']
-    Input Text  //input[@name="email"]  testing
-    Input Text  //input[@name="pass"]  ***
-    Click Element  //label[@id="loginbutton"]
-    Click Link  Recover Your Account
-    Input Text  xpath=(//input[@name="email"])[2]  finding
-    Click Element  //input[@name="did_submit"]
+
+FB Enter Credentials
+    [Arguments]  ${credentials}
+    Input Text  ${FB_email}  ${credentials.email}
+    Input Text  ${FB_pass}  ${credentials.password}
+    Click Element  ${Login}
+
+Recovery
+    Click Link  ${RecoveryLink}
+    Input Text  ${FB_email2}  finding
+    Click Element  ${SubmitLink}
     Click Link  Facebook
     sleep  3s
     Close Browser

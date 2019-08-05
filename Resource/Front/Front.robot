@@ -7,13 +7,13 @@ ${Browser}  chrome
 ${Front_URL}  http://www.ebay.com/
 
 *** Keywords ***
-Front Open Team Page
+Open Team Page
     Open Browser  ${Front_URL}  ${Browser}
     Maximize Browser Window
 
 Samsung Test Input
-    Click Element  ${SamsungLink}
-    Input Text  ${SamsungInput}  samsung s9
+    Click Element  ${MainLink}
+    Input Text  ${EbayInput}  ${Samsung}
     Click Element  ${SubmitLink}
 
 Search Tabs
