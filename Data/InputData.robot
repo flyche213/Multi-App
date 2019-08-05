@@ -18,8 +18,8 @@ ${4}  xpath=(//h2[@class="srp-format-tabs-h2"])[4]
 #Second Page Links and Variables
 &{LoginUser1}  email=testing  password=123
 
-${FB_email}  //input[@name="email"]
-${FB_pass}  //input[@name="pass"]
+&{FB_email&pass}  fb_email=//input[@name="email"]  fb_pass=//input[@name="pass"]
+${FB_pass}
 
 ${Login}  //label[@id="loginbutton"]
 ${RecoveryLink}  Recover Your Account

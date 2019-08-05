@@ -1,10 +1,11 @@
 *** Settings ***
 Documentation  End to End testing
 Library  SeleniumLibrary
-Resource  ../../Resource/Back/Ebay.robot
+Resource  ../../Resource/Front/Ebay.robot
 
 
 *** Test Cases ***
 Start
-   Back Open Team Page
-   FB Test Input
+   Open Team Page
+   Samsung Test Input
+   Search Tabs

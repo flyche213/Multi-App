@@ -15,9 +15,9 @@ Open Team Page
     #Click Link  xpath://a[@class='page-scroll']
 
 FB Enter Credentials
-    [Arguments]  ${credentials}
-    Input Text  ${FB_email}  ${credentials.email}
-    Input Text  ${FB_pass}  ${credentials.password}
+    [Arguments]  ${input}  ${credentials}
+    Input Text  ${input.fb_email}  ${credentials.email}
+    Input Text  ${input.fb_pass}  ${credentials.password}
     Click Element  ${Login}
 
 Recovery

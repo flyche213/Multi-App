@@ -1,17 +1,17 @@
 *** Settings ***
 Documentation  End to End testing
 Library  SeleniumLibrary
-Resource  ../../Resource/Back/Ebay.robot
-Resource  ../../Resource/Front/FB.robot
+Resource  ../../Resource/Back/FB.robot
+Resource  ../../Resource/Front/Ebay.robot
 
 
 *** Test Cases ***
-App1
-   FB.Open Team Page
-   FB.Samsung Test Input
-   FB.Search Tabs
+#App1
+#   Ebay.Open Team Page
+#   Ebay.Samsung Test Input
+#   Ebay.Search Tabs
 
 App2
-   Ebay.Open Team Page
-   Ebay.FB Enter Credentials  ${LoginUser1}
-   Ebay.Recovery
+   FB.Open Team Page
+   FB.FB Enter Credentials  ${FB_email&pass}  ${LoginUser1}
+   FB.Recovery
