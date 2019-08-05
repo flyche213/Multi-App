@@ -22,7 +22,7 @@ FB Enter Credentials
 
 Recovery
     Click Link  ${RecoveryLink}
-    Input Text  ${FB_email2}  finding
+    Input Text  ${FB_email2}  ${RecoveryEmail}
     Click Element  ${SubmitLink}
     Click Link  Facebook
     sleep  3s

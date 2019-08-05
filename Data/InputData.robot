@@ -24,4 +24,5 @@ ${FB_pass}  //input[@name="pass"]
 ${Login}  //label[@id="loginbutton"]
 ${RecoveryLink}  Recover Your Account
 ${FB_email2}  xpath=(//input[@name="email"])[2]
+${RecoveryEmail}  finding
 ${SubmitLink}  //input[@name="did_submit"]
