@@ -5,9 +5,6 @@ Resource  ../../Resource/Back/FB.robot
 Resource  ../../Resource/Front/Ebay.robot
 
 
-*** Variables ***
-${Value}  300
-
 *** Test Cases ***
 
 Run App
