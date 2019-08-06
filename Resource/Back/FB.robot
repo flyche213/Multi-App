@@ -21,9 +21,13 @@ FB Enter Credentials
     Click Element  ${Login}
 
 Recovery
+    sleep  3s
     Click Link  ${RecoveryLink}
+    sleep  3s
+    Log  Message: Reached till this point
     Input Text  ${FB_email2}  ${RecoveryEmail}
-    Click Element  ${SubmitLink}
+    Click Element  ${SearchLink}
+    sleep  3s
     Click Link  Facebook
     sleep  3s
     Close Browser
