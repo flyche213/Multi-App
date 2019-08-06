@@ -30,3 +30,18 @@ ${RecoveryLink}  Recover Your Account
 ${FB_email2}  xpath=(//input[@name="email"])[2]
 ${RecoveryEmail}  finding
 ${SearchLink}  //input[@name="did_submit"]
+
+#Amazon
+&{Amazon_User1}  email=emailone  password=Default
+&{Amazon_User2}  email=emailtwo  password=password
+&{Amazon_User3}  email=emailthree  password=secret
+&{Webpage}  Browser=Chrome  URL=https://www.facebook.com/
+#Links
+#xpaths
+${first_name}  name:firstname
+${last_name}  xpath://input[@name='lastname']
+${ForgotAccount}  xpath://a[text()='Forgot account?']
+${custom}  sex  -1
+#Configurations
+
+
