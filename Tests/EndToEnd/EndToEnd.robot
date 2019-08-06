@@ -23,11 +23,7 @@ App1
 #FB shows inconsistency if this procedure is repeated more than twice...
 App2
    FB.Open Team Page
-   FB.FB Enter Credentials  ${FB_email&pass}  ${LoginUser1}
-   FB.Recovery
-   FB.Open Team Page
-   FB.FB Enter Credentials  ${FB_email&pass}  ${LoginUser2}
-   FB.Recovery
-   FB.Open Team Page
-   FB.FB Enter Credentials  ${FB_email&pass}  ${LoginUser3}
+   @{items} =  Create List  ${LoginUser1}  ${LoginUser2}  ${LoginUser3}
+   :For  ${MyItem}  IN  @{items}
+   \  FB.FB Enter Credentials  ${FB_email&pass}  ${MyItem}
    FB.Recovery

@@ -18,9 +18,10 @@ FB Enter Credentials
     [Arguments]  ${input}  ${credentials}
     Input Text  ${input.fb_email}  ${credentials.email}
     Input Text  ${input.fb_pass}  ${credentials.password}
-    Click Element  ${Login}
+
 
 Recovery
+    Click Element  ${Login}
     sleep  3s
     Click Link  ${RecoveryLink}
     sleep  3s
