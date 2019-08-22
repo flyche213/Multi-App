@@ -11,7 +11,7 @@ ${EbayInput}  //input[@name="_nkw"]
 ${Samsung}  samsung s9
 ${SubmitLink}  xpath://input[@type="submit"]
 #links
-${tabs}  //li[@class="fake-tabs__item btn"]
+${tabs}  //li[@class="srp-format-tabs-h2"]
 ${2}  xpath=(//h2[@class="srp-format-tabs-h2"])[2]
 ${3}  xpath=(//h2[@class="srp-format-tabs-h2"])[3]
 ${4}  xpath=(//h2[@class="srp-format-tabs-h2"])[4]

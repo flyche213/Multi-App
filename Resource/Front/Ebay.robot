@@ -15,12 +15,15 @@ Samsung Test Input
     Click Element  ${MainLink}
     Input Text  ${EbayInput}  ${Samsung}
     Click Element  ${SubmitLink}
+    Click Link  eBay Logo
+
+
 
 Search Tabs
-    Click Element  ${tabs}
-    Click Element  ${2}
-    Click Element  ${3}
-    Click Element  ${4}
+    Click Link  Accept Offers
+    Click Link  Auction
+    #Click Element  ${3}
+    #Click Element  ${4}
     Click Link  eBay Logo
     #Click Link  xpath://a[@class='page-scroll']
     sleep  3s

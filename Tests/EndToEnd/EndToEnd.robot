@@ -14,6 +14,7 @@ Resource  ../../Resource/Front/Ebay.robot
 
 Multi-App
     App1
+    Close Browser
     App2
     App3
     Close All Browsers
@@ -21,22 +22,22 @@ Multi-App
 
 *** Keywords ***
 App1
-   Ebay.Open Team Page
-   Ebay.Samsung Test Input
-   Ebay.Search Tabs
+  Given Ebay.Open Team Page
+  Then Ebay.Samsung Test Input
+  # Ebay.Search Tabs
 
 
 App2
-   FB.Open Team Page
-    FB.FB Enter Credentials  ${FB_email&pass}  ${LoginUser1}
-    Recovery
+   Given FB.Open Team Page
+   When FB.FB Enter Credentials  ${FB_email&pass}  ${LoginUser1}
+   Then Recovery
 
 App3
-    Amazon.Open Team Page
-    Amazon.AmazonLogIn  ${Amazon_User1}
-    Amazon.AmazonCredentials  ${Amazon_User2}
-    Amazon.AmazonNavigate
-    Amazon Authentication Test Case User One
+    Given Amazon.Open Team Page
+    When Amazon.AmazonLogIn  ${Amazon_User1}
+    When Amazon.AmazonCredentials  ${Amazon_User2}
+    Then Amazon.AmazonNavigate
+    And Amazon Authentication Test Case User One
 
 
 
