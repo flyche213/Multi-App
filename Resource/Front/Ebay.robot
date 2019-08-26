@@ -29,7 +29,9 @@ Ebay Search and Sell
     Input Text    //input[@name="smac_complete"]    cell phones
     Click Element    //div[@class="l-hero__bg"]
     Click Element    //button[@id="hero-keyword_searchBox-2[0]"]
-    Click Element  eBay Logo
+    #Click Link  eBay Logo
+
+
     #These labels are unable
     #Click Element    xpath=(//span[@class="s-lbl"])[2]
     #Click Element    //span[@class="s-lbl"]
