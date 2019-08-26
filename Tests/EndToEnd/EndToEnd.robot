@@ -15,15 +15,16 @@ Resource  ../../Resource/Front/Ebay.robot
 Multi-App
     App1
     Close Browser
-    App2
-    App3
-    Close All Browsers
+    #App2
+    #App3
+    #Close All Browsers
 
 
 *** Keywords ***
 App1
   Given Ebay.Open Team Page
   Then Ebay.Samsung Test Input
+  Then Ebay Search and Sell
   # Ebay.Search Tabs
 
 

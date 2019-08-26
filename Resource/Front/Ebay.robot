@@ -17,7 +17,32 @@ Samsung Test Input
     Click Element  ${SubmitLink}
     Click Link  eBay Logo
 
-
+Ebay Search and Sell
+    Click Element    //div[@id="gh-cat-box"]
+    Select From List By Value    //select[@name="_sacat"]    267
+    Click Element    //input[@id="gh-btn"]
+    Click Element    xpath=(//span[@class="b-accordion-text"])[2]
+    #Click Element    //svg[@id="w2-w0-w1-accordion-arrow"]
+    Click Link    xpath=(//a[@href="https://www.ebay.com/b/Magazines/280/bn_1860302"])[2]
+    Click Link  eBay Logo
+    Click Link    //a[@href="https://www.ebay.com/sl/sell"]
+    Input Text    //input[@name="smac_complete"]    cell phones
+    Click Element    //div[@class="l-hero__bg"]
+    Click Element    //button[@id="hero-keyword_searchBox-2[0]"]
+    Click Element  eBay Logo
+    #These labels are unable
+    #Click Element    xpath=(//span[@class="s-lbl"])[2]
+    #Click Element    //span[@class="s-lbl"]
+    #Click Link    //a[@href="javascript:void(0)"]
+    #Click Element    xpath=(//span[@class="s-lbl"])[2]
+    #Click Link    //a[@href="javascript:void(0)"]
+    #Click Link    //a[@href="javascript:void(0)"]
+    #Click Element    //span[@class="s-lbl"]
+    #Click Element    //button[@class="btn btn--primary"]
+    #Input Text    //input[@name="userid"]    5555
+    #Click Element    //body[@class="ds6"]
+    #Input Text    //input[@name="pass"]    ***
+    #Click Element    //img[@id="gh-logo"]
 
 Search Tabs
     Click Link  Accept Offers
